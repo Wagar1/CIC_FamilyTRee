@@ -1,0 +1,231 @@
+#moreInfoLinkDiv {
+    margin-bottom: 10px;
+}
+
+#backDiv {
+    margin-bottom: 10px;
+}
+
+#moreInfoDiv,
+.add-info-box {
+    margin-top: 10px;
+    width: 500px;
+}
+
+.round-flag-icon {
+    height: 15px;
+    width: 15px;
+}
+
+#infoBox {
+    position: relative;
+    /*width: 500px;*/
+    height: 200px;
+}
+
+#infoBoxHolder {
+    z-index: 300;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border: 1px solid #999;
+    background-color: white;
+    opacity: 0.9;
+    transform: translate(-50%, -50%);
+}
+
+.container-main {
+    width: 98%;
+    margin: 0 auto;
+    /* background-color: aquamarine; */
+}
+
+#allSampleContent {
+    display: flex;
+    gap: 20px;
+}
+
+#sample {
+    flex: 1;
+}
+
+#sample2 {
+    flex: 10;
+}
+
+#myDiagramDiv {
+    background-color: #e8e8e8;
+    border-radius: 10px;
+    width: 300px;
+    height: 725px;
+    overflow: hidden;
+}
+
+#fullDiagram {
+    height: 300px;
+    width: 100%;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    background-color: #f1f1f1;
+}
+
+#localDiagram {
+    height: 450px;
+    width: 100%;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+}
+
+#localDiagram canvas {
+    outline: none !important;
+}
+
+#line {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(214, 213, 213);
+    margin: 10px 0;
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 20;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+/* ------------------------ NAVBAR ---------------------------- */
+
+.nav {
+    width: 100%;
+    padding: 5px 0;
+    margin: 0 auto;
+    background-color: #f1f1f1;
+    color: #000;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.nav-ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    list-style: none;
+    /* background-color: red; */
+    margin: 0;
+    width: 80%;
+    height: 100%;
+}
+
+.nav-link {
+    align-self: center;
+    padding: 0;
+    display: inline-block;
+    padding: 4px 8px;
+    color: #555;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-link:active,
+.nav-link:focus {
+    color: #444;
+}
+
+.nav-link:hover {
+    background-color: #e7e6e6;
+    color: #1815e8;
+}
+
+.socar {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.btn-enlarge {
+    z-index: 10000;
+    top: 4px;
+    left: 4px;
+    padding: 4px 8px;
+    border: 1px solid #333;
+    color: #ccc;
+}
+
+.expand {
+    width: 1500px !important;
+    height: 600px !important;
+}
+
+@media screen and (max-width: 1400px) {
+    .expand {
+        width: 1200px !important;
+        height: 400px !important;
+    }
+}
