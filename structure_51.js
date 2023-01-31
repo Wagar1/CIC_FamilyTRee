@@ -308,7 +308,7 @@ var showPopupTimeout = null;
 let companyStructureImages = [];
     async function getCompanyStructureImages() {
         try{
-            let url = window.getCompanyStructureImages; //'http://192.168.14.33/otcs/llisapi.dll?func=ll&objId=151772&objAction=RunReport';
+            let url = window.getCompanyStructureImagesUrl; //'http://192.168.14.33/otcs/llisapi.dll?func=ll&objId=151772&objAction=RunReport';
             let result = await fetch(url);
             let data = await result.json();
             companyStructureImages =  data;
